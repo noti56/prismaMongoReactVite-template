@@ -1,6 +1,6 @@
-🇮🇱🇮🇱🇮🇱🇮🇱🇮🇱🇮🇱🇮🇱🇮🇱
+![Israel](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/500px-Flag_of_Israel.svg.png)
 
-# PMRV-template
+# PMRV-template 🇮🇱
 
 Welcome to the PMRV-template repository!
 
@@ -11,18 +11,18 @@ Welcome to the PMRV-template repository!
 
 This is a monorepo that includes both the client and server-side components of an application.
 
-## Overview
+## Overview 🇮🇱
 
 This project is built using the following technologies:
 
-### Client Side
+### Client Side 🇮🇱
 
 - **Vite:** A fast build tool that focuses on speed and efficiency.
 - **React:** A popular JavaScript library for building user interfaces.
 - **TypeScript:** A superset of JavaScript that adds static typing to the language.
 - **Styled Components:** A styling library for React that utilizes tagged template literals.
 
-### Server Side
+### Server Side 🇮🇱
 
 - **Node.js:** A JavaScript runtime for server-side development.
 - **Express:** A web application framework for Node.js.
@@ -33,12 +33,12 @@ This project is built using the following technologies:
 - **Dotenv:** A zero-dependency module for loading environment variables.
 - **Jsonwebtoken:** A library for creating JSON Web Tokens.
 
-### Docker
+### Docker 🇮🇱
 
 The repository includes a Dockerfile for setting up a local development environment with MongoDB and Prisma database.
 (you need docker insatlled on your machine)
 
-### Getting Started
+### Getting Started 🇮🇱
 
 ```bash
 cd client && npm install
@@ -67,9 +67,7 @@ npm run start-db
 
 and also dont forget to set the .env file , you can the .env.template file
 
-### server side utills
+### server side utills 🇮🇱
 
 ive also included basic functionality for server side,
 with utills like with jwt and encryption
-
-🇮🇱🇮🇱🇮🇱🇮🇱🇮🇱🇮🇱🇮🇱🇮🇱
