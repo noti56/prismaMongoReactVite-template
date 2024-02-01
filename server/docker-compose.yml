@@ -9,8 +9,8 @@ services:
     restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: pinPotBadok
-      MONGO_INITDB_DATABASE: rinaStyling
+      MONGO_INITDB_ROOT_PASSWORD: passwrod
+      MONGO_INITDB_DATABASE: dbname
       MONGO_REPLICA_HOST: localhost
       MONGO_REPLICA_PORT: "27017"
       INIT_WAIT_SEC: 3
