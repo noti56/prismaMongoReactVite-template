@@ -1,11 +1,33 @@
-version: "3.7"
+version: "3.1"
 services:
-  mongodb_container:
-    container_name: my_mongo_container
-    image: prismagraphql/mongo-single-replica:4.4.3-bionic
+  mongo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        MONGO_VERSION: 4
+    restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: prisma
+      MONGO_INITDB_ROOT_PASSWORD: pinPotBadok
+      MONGO_INITDB_DATABASE: rinaStyling
+      MONGO_REPLICA_HOST: localhost
+      MONGO_REPLICA_PORT: "27017"
       INIT_WAIT_SEC: 3
     ports:
       - 27017:27017
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "mongo",
+          "admin",
+          "--port",
+          "27018",
+          "--eval",
+          "db.adminCommand('ping').ok"
+        ]
+      interval: 5s
+      timeout: 2s
+      retries: 20
+    entrypoint: /entrypoint.sh
